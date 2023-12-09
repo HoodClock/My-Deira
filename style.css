@@ -1,0 +1,703 @@
+@font-face {
+    font-family: fool;
+    src: url(./Fonts/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #FDF8F5;
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.sideMenu{
+    display: none;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 999;
+    background-color: #e55f5fd8;
+    backdrop-filter: blur(10px);
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.navbar nav .iconXmark{
+    margin: 11%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contents{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar nav .contents{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-left: 11%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contents h3{
+    font-size: 17px;
+    color: #FDF8F5;
+    font-family: fool;
+    letter-spacing: 2px;
+}
+
+.contents h3:hover{
+    color: #ffe20a;
+    border-bottom: 2px solid #FFFFFF;
+    cursor: pointer;
+    font-size: 35px;
+    transition: all 0.6s ease-out;
+}
+
+.burger{
+    margin: 23px;
+}
+
+.navbar {
+    background-color: #FDF8F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.logo img {
+    width: 75%;
+    font-family: fool;
+    letter-spacing: 2px;
+    max-width: 7em;
+}
+
+.listItmes {
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    align-items: center;
+}
+
+.burgerMenu {
+    margin-right: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.burgerMenu h3 {
+    border: 2px solid #E55F60;
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+    letter-spacing: 1.5px;
+    font-family: fool;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.burgerMenu h3:hover {
+    cursor: pointer;
+    background-color: #ae1f1f;
+    transition: all ease-out 1s;
+    color: #FDF8F5;
+    border: none;
+}
+
+
+.listItmes h3 {
+    font-size: 0.7rem;
+    letter-spacing: 1.3px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.listItmes h3:hover {
+    cursor: pointer;
+    color: #baa60d;
+}
+
+.listItmes h3:nth-child(3) {
+    background-color: #E55F60;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    color: #FDF8F5;
+}
+
+.listItmes h3:nth-child(3):hover {
+    background-color: #b10000;
+    transition: all ease-out 1.5s;
+}
+
+.video video {
+    border-radius: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    object-fit: contain;
+    width: 95%;
+    height: 100%;
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 11vh;
+}
+
+.centerDiv {
+    margin-top: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mainHeading h3 {
+    font-size: 2em;
+    color: #E55F60;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: sofia-pro, sans-serif;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mainHeading h3 {
+        font-size: 36px;
+    }
+}
+
+.mainHeading h3 {
+    margin-bottom: 10px;
+}
+
+.subSlogan h3 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-family: sofia-pro, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.paragraph {
+    width: 60%;
+}
+
+.paragraph p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+}
+
+.reservation {
+    margin-top: 1.3rem;
+}
+
+.reservation h3 {
+    background-color: #E55F60;
+    color: #FDF8F5;
+    padding: 1rem 1rem;
+    font-family: fool;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 1.5rem;
+    font-size: 16px;
+}
+
+.reservation h3:hover {
+    background-color: #b10000;
+    transition: all 1.5s;
+    cursor: pointer;
+}
+
+.imageFlower {
+    margin-top: 40px;
+}
+
+.page3 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 16vh;
+}
+
+.firstImage img {
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 80%;
+}
+
+.gridBoxes {
+    gap: 11px;
+    margin-top: 2em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divOne {
+    width: 50%;
+    height: auto;
+}
+
+.divTwo {
+    height: 100%;
+    width: 50%;
+}
+
+.grids2 {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    background-color: #800020;
+}
+
+.grids2:hover {
+    background-color: #ae1f1f;
+}
+
+.grids3 {
+    height: 50%;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #1C352D;
+}
+
+.grids3:hover {
+    background-color: #2e463e;
+}
+
+
+/* code for grid 3 */
+.SummerMenu {
+    gap: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headings {
+    max-width: 100%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headings h1 {
+    margin-top: 0.2em;
+    font-family: sofia-pro, sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    color: #DBCBBE;
+    text-transform: uppercase;
+}
+
+.headings h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FDF8F5;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.imageSummer {
+    max-width: 100%;
+}
+
+.menuShown {
+    max-width: 100%;
+}
+
+.menuShown h3 {
+    color: #DBCBBE;
+    font-family: fool;
+    letter-spacing: 0.2rem;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.menuShown h3:hover {
+    text-decoration: underline #DBCBBE 2px;
+    cursor: pointer;
+    transition: all 1.5s ease-in;
+}
+
+.headings {
+    max-width: 100%;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headings h1 {
+    margin-top: 0.2em;
+    font-family: sofia-pro, sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    color: #DBCBBE;
+    text-transform: uppercase;
+}
+
+.headings h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FDF8F5;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.menuShown h3 {
+    color: #DBCBBE;
+    font-family: fool;
+    letter-spacing: 0.2rem;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.menuShown h3:hover {
+    text-decoration: underline #DBCBBE 2px;
+    cursor: pointer;
+    transition: all 1.5s ease-in;
+}
+
+/* Styles for larger screens */
+@media (max-width: 718px) {
+
+    .divOne,
+    .divTwo {
+        width: 50%;
+    }
+
+    .gridBoxes {
+        margin-top: 2em;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .divOne,
+    .divTwo {
+        width: 100%;
+        height: 50%;
+        box-sizing: border-box;
+    }
+
+    .imgaeFlowerscardDown img {
+        width: 50%;
+        margin: 2em;
+        padding: 3vmax;
+        width: 50vmax;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .page4 {
+        width: 100%;
+        max-width: 100%;
+        padding-top: 80%;
+    }
+
+    .headingsANDsubheadings {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .headingsANDsubheadings h3 {
+        display: none;
+    }
+
+}
+
+
+.imageSummer,
+.menuShown {
+    max-width: 100%;
+}
+
+.headings h1 {
+    font-size: 2em;
+}
+
+.headings h3 {
+    font-size: 0.9em;
+}
+
+.menuShown h3 {
+    font-size: 0.8em;
+}
+
+.grids2,
+.grids3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+.imgaeFlowerscardDown {
+    margin-top: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page4 {
+    width: 100%;
+    height: auto;
+    margin-top: 50vmax;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingsANDsubheadings {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headingsANDsubheadings h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 4.2px;
+    color: #E55F60;
+    font-family: fool;
+    text-transform: uppercase;
+}
+
+.headingsANDsubheadings h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #1C352D;
+    text-transform: uppercase;
+    font-family: sofia-pro, sans-serif;
+}
+
+.headingsANDsubheadings h3 span {
+    color: #E55F60;
+}
+
+.personCredential {
+    gap: 33px;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstinput input {
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-right: 2vmax;
+    padding: 1vmax 3vmax;
+}
+
+.firstinput h4 {
+    padding: 12px;
+    font-family: fool;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+.secondInput h4 {
+    padding: 12px;
+    font-family: fool;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+.thirdInput h4 {
+    padding: 12px;
+    font-family: fool;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+.forthInput h4 {
+    padding: 12px;
+    font-family: fool;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+.secondInput input {
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-right: 2vmax;
+    padding: 1vmax 3vmax;
+}
+
+.thirdInput input {
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-right: 2vmax;
+    padding: 1vmax 3vmax;
+}
+
+.forthInput input {
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-right: 2vmax;
+    padding: 1vmax 3vmax;
+}
+
+
+.button {
+    border: 2px solid #800020;
+    border-radius: 25px;
+}
+
+.button h3 {
+    letter-spacing: 2px;
+    padding: 1vmax 3vmax;
+    color: #800020;
+    font-family: sofia-pro, sans-serif;
+}
+
+.button:hover {
+    border: 2px solid #E55F60;
+    transition: all 0.6s ease-out;
+    background-color: #E55F60;
+    cursor: pointer;
+}
+
+.button h3:hover {
+    color: #FDF8F5;
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 2rem;
+    height: 80vh;
+    background-color: #E55F60;
+}
+
+.footerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+}
+
+.footerLogo h1{
+    color: #FFFFFF;
+    font-family: fool;
+    letter-spacing: 2px;
+    font-size: 3.3rem;
+    text-decoration: underline;
+}
+
+.boxShadowFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+.box h2{
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 800;
+    font-family: fool;
+}
+
+.box{
+    gap: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box h4{
+    color: #FFFFFF;
+    font-family: fool;
+    font-size: 13px;
+}
+
+.box h4:hover{
+    cursor: pointer;
+    text-decoration: 2px solid #fff underline;
+}
+
+.linkSocial{
+    gap: 22px;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    padding: 1.3rem 1rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.icon:hover{
+    background-color: #800020;
+    color: #FDF8F5;
+}
+
+/* .videoUnder {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.videoUnder video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
